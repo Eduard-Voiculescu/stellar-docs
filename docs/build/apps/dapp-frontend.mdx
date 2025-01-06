@@ -19,16 +19,13 @@ Let's get started.
 
 You're going to need [Node.js](https://nodejs.org/en/download/package-manager/) v18.14.1 or greater. If you haven't yet, install it now.
 
-We want to initialize our current project as an Astro project. To do this, we can again turn to the `stellar contract init` command, which has a `--frontend-template` flag that allows us to pass the url of a frontend template repository. As we learned in [Storing Data](../smart-contracts/getting-started/storing-data.mdx#adding-the-increment-contract), `stellar contract init` will not overwrite existing files, and is safe to use to add to an existing project.
-
-From our `soroban-hello-world` directory, run the following command to add the Astro template files.
+We want to initialize our current project as an Astro project. From our `soroban-hello-world` directory, run the following command to add the Astro template files.
 
 ```sh
-stellar contract init ./ \
-  --frontend-template https://github.com/stellar/soroban-astro-template
+git clone git@github.com:stellar/soroban-template-astro.git
 ```
 
-This will add the following to your project, which we'll go over in more detail below.
+This will clone the following to your project, which we'll go over in more detail below.
 
 ```bash
 ├── CONTRIBUTING.md
@@ -495,4 +492,4 @@ At this point, you've seen a full end-to-end example of building a contract on S
 
 - See more complex example contracts in the [Example Contracts](../smart-contracts/example-contracts/README.mdx) section.
 - Learn more about the [internal architecture and design](../../learn/encyclopedia/contract-development/README.mdx) of Soroban.
-- Learn how to find other templates for use with `--frontend-template`, other than [stellar/soroban-template-astro](https://github.com/stellar/soroban-astro-template), and how to build your own: [Develop contract initialization frontend templates](../guides/dapps/soroban-contract-init-template.mdx)
+- Learn how to find other templates other than [stellar/soroban-template-astro](https://github.com/stellar/soroban-astro-template), and how to build your own: [Develop contract initialization frontend templates](../guides/dapps/soroban-contract-init-template.mdx)
